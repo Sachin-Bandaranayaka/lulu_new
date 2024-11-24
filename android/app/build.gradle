@@ -113,6 +113,7 @@ android {
       }
   }
   packagingOptions {
+        doNotStrip "**/*.so"
       jniLibs {
           useLegacyPackaging (findProperty('expo.useLegacyPackaging')?.toBoolean() ?: false)
       }
